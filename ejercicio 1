@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+void suma(int a, int b, int *result);
+
+void suma(int a, int b, int *result)
+{
+    *result = a + b;
+}
+
+int main()
+{
+    int num1, num2, sum;
+    printf("Introduce dos numeros a sumar: \n");
+    scanf("%d %d", &num1, &num2);
+    suma(num1, num2, &sum);
+
+    printf("La suma es: %d\n", sum);
+    return 0;
+}
+
